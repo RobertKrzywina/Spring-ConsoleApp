@@ -14,24 +14,23 @@ public class LogAspect {
         System.out.println("@Before -> Application started!");
     }
 
-    @Before("execution(* controller.Producer.createBankAccountForUser(..))")
+    @Before("AspectUtil.createBankAccountForUserMethods()")
     public void beforeNewUser() {
         System.out.println("@Before -> Log for a new User");
     }
 
-    @After("execution(* controller.Producer.createBankAccountForUser(..))")
+    @After("AspectUtil.createBankAccountForUserMethods()")
     public void afterNewUser() {
         System.out.println("@After -> Log for a new User");
     }
 
-    @Before("execution(* controller.Producer.addMoney(..))")
+    @Before("AspectUtil.addMoneyMethods()")
     public void beforeAddMoney() {
         System.out.println("@Before -> Log for an add money");
     }
 
-    @After("execution(* controller.Producer.addMoney(..))")
+    @After("AspectUtil.addMoneyMethods()")
     public void afterAddMoney() {
         System.out.println("@After -> Log for an add money");
     }
-
 }
