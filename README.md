@@ -1,2 +1,3 @@
 # Spring-ConsoleApp
-Simple console spring app
+Simple console app in Spring using dependecjy injection and AOP.
+
