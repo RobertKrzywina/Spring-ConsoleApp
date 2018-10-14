@@ -13,20 +13,8 @@ public class BankAccount {
         this.accountOwner = accountOwner;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public String getAccountOwner() {
-        return accountOwner;
-    }
-
     public void setAccountOwner(String accountOwner) {
         this.accountOwner = accountOwner;
-    }
-
-    public String getAccountNumber() {
-        return accountNumber;
     }
 
     public void setAccountNumber(String accountNumber) {
