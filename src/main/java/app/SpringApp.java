@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @Configuration
-@ComponentScan(basePackages = "controller")
+@ComponentScan(basePackageClasses = Producer.class)
 @EnableAspectJAutoProxy
 public class SpringApp {
     public static void main(String[] args) {
