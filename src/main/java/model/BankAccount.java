@@ -31,7 +31,7 @@ public class BankAccount {
 
     @Override
     public String toString() {
-        return "id = " + id + ", owner = " + accountOwner + ", account number = " + accountNumber +
-               ", current deposit = " + deposit;
+        return String.format("id = %d, owner = %s , account number = %s, current deposit = %.2f",
+                id, accountOwner, accountNumber, deposit);
     }
 }
