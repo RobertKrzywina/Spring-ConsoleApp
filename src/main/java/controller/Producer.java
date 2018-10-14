@@ -67,7 +67,7 @@ public class Producer {
                 System.out.println(user.toString());
             }
         } else {
-            System.out.println("No users.");
+            throw new Exceptions("found no users!");
         }
     }
 
@@ -77,7 +77,7 @@ public class Producer {
                 System.out.println(account.toString());
             }
         } else {
-            System.out.println("No accounts.");
+            throw new Exceptions("found no accounts!");
         }
     }
 }
